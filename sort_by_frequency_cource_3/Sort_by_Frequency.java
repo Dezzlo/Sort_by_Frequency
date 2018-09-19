@@ -3,25 +3,29 @@ package sort_by_frequency_cource_3;
 import java.util.ArrayList;
 import java.util.Collections;
 
-
+/**
+ * Задание : выполнить сортировку массива по частоте.
+ *
+ * @author Gorshkov Nikita , 16IT18K
+ */
 public class Sort_by_Frequency {
     public static void main(String args[]){
-        //////////////////////////////////////////////////////////////////////////
+
         ArrayList<Integer> array = new ArrayList<Integer>();
         Collections.addAll(array , 2, 5, 2, 6, -1, 9999999, 5, 8, 8, 8);
-        //////////////////////////////////////////////////////////////////////////
+
         ArrayList<Integer> number_from_an_array = new ArrayList<Integer>(array.size());
-        //////////////////////////////////////////////////////////////////////////
+
             writing_numbers_in_ArrayList(number_from_an_array , array);
-        //////////////////////////////////////////////////////////////////////////
-        int jabka_chest = number_from_an_array.size();// Используется в одном неприметном цикле .. Хе хе хе
-        //////////////////////////////////////////////////////////////////////////
+
+        int jabka_chest = number_from_an_array.size(); //Используется в одном неприметном цикле .. Хе хе хе
+
         ArrayList<Integer> frequency_of_number = new ArrayList<Integer>(number_from_an_array.size());
-        //////////////////////////////////////////////////////////////////////////
+
             finding_the_frequency_of_numbers(number_from_an_array , array , frequency_of_number);
-        //////////////////////////////////////////////////////////////////////////
-            array.clear();// Очищаем массив , для дальнейшего использования
-        //////////////////////////////////////////////////////////////////////////
+
+            array.clear(); //Очищаем массив , для дальнейшего использования
+
 
         /**
          * Цикл с методом для поиска максимальной частоты, а также записи
